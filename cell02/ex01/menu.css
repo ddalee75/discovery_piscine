@@ -1,0 +1,42 @@
+body, html {
+    height: 100%;
+    margin: 0px;
+    background-image: url("https://cdn.pixabay.com/photo/2020/06/10/13/30/food-5282718_960_720.jpg");
+    /* Full height */
+    height: 100%;
+    opacity: 90%;
+    /* Center et dimensionnez l'image bien */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.h2 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+}
+
+select {
+    width: 400px;
+    height: 50px;
+    font-size: 1rem;
+    padding: 2px 5px;
+}
+
+.logo {
+    position: absolute;
+    bottom: 0;
+}
+
+.option1{
+    text-align: center;
+}
+

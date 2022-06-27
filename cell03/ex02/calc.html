@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+</head>
+<style>
+    body, html{
+    
+        height: 100%;
+        margin: 0px;
+        
+    
+    }
+    .global {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(88, 122, 111);
+        
+    }
+   
+</style>
+<body>
+
+    <div class="global">
+        
+        <input type="text" id="number1"> 
+        <select id="math">
+            <option value="+">+</option> 
+            <option value="-">-</option>
+            <option value="*">*</option> 
+            <option value="/">/</option> 
+            <option value="%">%</option>
+        </select>
+        <input id="number2"> 
+        <input type="submit" value="Try me!" onclick="calcul();">
+        
+    </div>
+        
+</body>
+<script>
+    function calcul() {
+        let chiffre1 = document.getElementById("number1").value;
+        let how = document.getElementById("math").value;
+        let chiffre2 = document.getElementById("number2").value;
+        if (chiffre1 < 0  || chiffre2 < 0)
+        { 
+            alert("Error :(");
+            return;
+        }
+        if (how == "+")
+            result = +chiffre1 + +chiffre2;
+        else if (how == "-")
+            result = +chiffre1 - +chiffre2;
+        else if (how == "*")
+            result = +chiffre1 * +chiffre2;
+        else if (how == "/")
+            result = +chiffre1 / +chiffre2;
+        else 
+        {
+            result = +chiffre1 % +chiffre2;
+            if (result == 0)
+            {
+                console.log("It's over 9000!");
+                alert("It's over 9000!" )
+            }
+        }
+        console.log(result);
+        alert(result);
+    }
+
+    const interval = setInterval(function() { alert("Please, use me...");}, 300000);
+
+
+</script>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>  
+<html>  
+    <head>  
+        <script>  
+            function getRandomColor() { //To give me a new rgb number everytime
+                 return (Math.floor(Math.random() * (255 - 10)) + 10);
+}
+
+            function getColor() {
+                  return `rgb(${getRandomColor()}, ${getRandomColor()}, ${getRandomColor()})`;
+}
+
+            function changeColor(color) { 
+                document.body.style.background = getColor() ; 
+            }
+        </script>  
+    </head>  
+    <body style = "text-align:center;"> 
+       
+        <button class="design" onclick = "changeColor('blue', 'green', 'red', 'yellow');">change colors</button>
+        
+    </body>  
+</html>

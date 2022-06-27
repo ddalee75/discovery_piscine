@@ -1,0 +1,87 @@
+
+.global{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    box-shadow: rgb(183, 191, 206) 3px 5px 5px;
+    border: solid rgb(192, 213, 216) 1px;
+
+}
+
+.title{
+    
+    padding: 1em ;
+    text-align: center;
+    font-size: 24px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.image{
+
+    background-image: url("https://cdn.pixabay.com/photo/2015/11/16/14/43/cat-1045782_960_720.jpg") ;    
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.text{
+
+    text-align: center;
+    padding-top: 1%;
+    
+}
+.text1{
+    
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+.text2{
+    
+    text-align: center;
+    color:rgb(64, 99, 163);
+    font-style: italic;
+}
+
+.text3{
+    
+    text-align: center;
+    color:rgb(43, 12, 117);
+    font-size: larger;
+}
+
+.social{
+    width: 100px;
+    padding: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+        
+
+
+}
+
+.contact{
+
+    background-color: rgb(23, 9, 73);
+    color:antiquewhite;
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    padding-top: 7%;
+    font-weight: bold;
+    font-size: x-large;
+    cursor: pointer;
+
+}
+.button{
+    text-decoration: none;
+    color:white;
+   
+}

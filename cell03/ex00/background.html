@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="background.css">
+    <title>Change colors</title>
+</head>
+<body style = "text-align:center;"> 
+       
+    <button class="design" onclick = "changeColor();">Change colors</button>
+    
+</body>  
+<script>  
+    function getRandomColor() { //To give me a new rgb number everytime
+         return (Math.floor(Math.random() * (255 - 10)) + 10);
+    }
+
+    function getColor() {
+          return `rgb(${getRandomColor()}, ${getRandomColor()}, ${getRandomColor()})`;
+    }
+
+    function changeColor(color) { 
+        document.body.style.background = getColor() ; 
+    }
+</script>  
+</html>
